@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Genre Recognition</title>
+    <title>Genre Analyzer</title>
     <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"></script>
     <script src="js/genres.js"></script>
@@ -16,11 +16,11 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-    <img src="img/deepsound.png" alt="Genre recognition" id="logo" class="logo-big">
+    <img src="img/deepsound.png" alt="Genre Analyzer" id="logo" class="logo-big">
     <div id="container">
         <div id="message-upload" class="message">
             <!-- <p>This is a demo of music genre recognition using a convolutional neural network running inside your browser. To start, click the button below and upload a song. A visualization will be shown, presenting the network's belief about the genre of the song at any given point in time.</p> -->
-            <p>This application recognizes a music based on its genre, from a total of 8 genres using Convolutional Neural Network. Upload a song using the button below.</p>
+            <p>This application analyses music based on its genre, from a total of 10 genres using Convolutional Neural Network. Upload a song!</p>
         </div>
         <div id="upload">
             <form enctype="multipart/form-data">
@@ -31,10 +31,10 @@
             </form>
         </div>
         <div id="message-wave" class="message">
-            <p>Processing</p>
+            <p>Processing...</p>
         </div>
         <div id="wave" class="modal"></div>
-        <!-- <div id="pills"></div> -->
+        <div id="pills"></div>
         <div id="piechart-container">
             <canvas id="piechart" height="450" width="400"></canvas>
             <div id="legend">
